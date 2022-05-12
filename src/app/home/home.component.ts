@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
     { id: 3, title: 'Bita Ghabaian', category: 'web',image: '/assets/images/bita.png',url: 'https://bitaghabaian.com'  },
     { id: 3, title: 'Daadsolutions', category: 'web',image: '/assets/images/daad.png',url: 'https://daadsolutions.com'  },
     { id: 3, title: 'Lebina Restaurant', category: 'web',image: '/assets/images/lebina.png',url: 'https://lebiina.ir'  },
-    { id: 3, title: 'Buy Bitumen', category: 'web',image: '/assets/images/bitumen.png',url: 'http://buy-bitumen.ir'  },
+    { id: 3, title: 'Buy Bitumen', category: 'web',image: '/assets/images/bitumen.png',url: 'http://buy-bitumen.com'  },
     { id: 3, title: 'Topcarclub', category: 'web',image: '/assets/images/topcar.png',url: 'http://topcarclub.com'  },
     { id: 3, title: 'Rhodes Art Studio', category: 'web',image: '/assets/images/rhodes.png',url: 'http://rhodesartstudio.com'  },
   ];
