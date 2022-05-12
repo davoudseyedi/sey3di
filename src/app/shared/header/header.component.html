@@ -1,0 +1,43 @@
+<header class="header_area">
+  <div class="main_menu">
+    <nav  class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+
+        <a class="navbar-brand logo_h" href="/">
+          <h2>Sey3di.com</h2>
+        </a>
+        <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse offset me-auto" id="navbarSupportedContent">
+          <ul id="navbar" class="nav navbar-nav menu_nav justify-content-end ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" [href]="'#home'" (click)="scrollTo($event)">
+                <span></span>
+                Startseite
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [href]="'#about'" (click)="scrollTo($event)">
+                <span></span>
+                über mich</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [href]="'#portfolio'" (click)="scrollTo($event)">
+                <span></span>
+                Portfolio
+              </a>
+            </li>
+            <!--            <li class="nav-item"><a class="nav-link" href="#">-->
+            <!--              <span></span>-->
+            <!--              Contact-->
+            <!--            </a></li>-->
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

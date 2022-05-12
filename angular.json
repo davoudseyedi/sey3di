@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "ea1f88a0-eccc-4396-ab0e-a0d379c16b7c"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -20,6 +23,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lottie-web",
+              "ngx-masonry"
+            ],
             "outputPath": "dist/sey3di",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -33,20 +40,25 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/masonry-layout/dist/masonry.pkgd.min.js",
+              "./node_modules/isotope-layout/dist/isotope.pkgd.min.js",
+              "./node_modules/imagesloaded/imagesloaded.pkgd.js"
+            ]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 }
               ],
               "fileReplacements": [
